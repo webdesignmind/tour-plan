@@ -435,6 +435,7 @@ template {
   padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
+  outline: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
@@ -492,7 +493,6 @@ template {
   }
   .navbar__search {
     margin-left: auto;
-    max-width: 340px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -501,6 +501,9 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
@@ -516,6 +519,7 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
     width: 16px;
     height: 11px;
     -webkit-box-align: center;
