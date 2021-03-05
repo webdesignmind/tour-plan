@@ -459,7 +459,6 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  cursor: pointer;
 }
 
 .user__avatar {
