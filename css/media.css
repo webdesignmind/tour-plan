@@ -23,9 +23,6 @@
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 92%;
-  }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
