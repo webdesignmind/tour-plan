@@ -11,7 +11,8 @@ body {
 
 .container {
   max-width: 1110px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 img {
@@ -459,6 +460,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .user__avatar {
@@ -474,16 +476,7 @@ template {
   color: #333333;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 700px;
-  }
+@media (max-width: 1023px) {
   .logo {
     width: 132px;
   }
@@ -509,7 +502,6 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -542,4 +534,4 @@ template {
     background-color: #333;
   }
 }
-/*# sourceMappingURL=stile.css.map */
+/*# sourceMappingURL=style.css.map */
