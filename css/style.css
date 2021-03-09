@@ -614,7 +614,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
