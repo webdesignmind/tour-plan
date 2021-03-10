@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -784,9 +784,11 @@ template {
   font-size: 14px;
   line-height: 19px;
   border: none;
+  outline: none;
   border-radius: 4px;
   background-color: #EC1F46;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .map {
@@ -794,12 +796,6 @@ template {
   height: 213px;
   background-color: #000;
   border-radius: 10px;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    padding: 0;
-  }
 }
 
 @media (max-width: 1023px) {
