@@ -27,11 +27,12 @@
   &-grid
     display: flex
     justify-content: space-between
-    // align-items: start
+    align-items: stretch
   &-right
     display: flex
     flex-direction: column
     justify-content: space-between
+    flex: 1
 .stars
   flex-basis: 100%
 .offer
@@ -75,7 +76,9 @@
     z-index: 10
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
 .slider
-  width: 728px
+  max-width: 728px
+  // width: 100%
+  margin-right: 15px
   &-button
     position: absolute
     top: 50%
@@ -93,10 +96,15 @@
     &__prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.swiper-slide
+  &__img
+    height: 100%
+    width: 100%
+    display: block
 .booking
   background-color: $dark
   border-radius: 8px
-  width: 350px
+  // max-width: 350px
   min-height: 210px
   color: $light
   padding: 28px
@@ -166,7 +174,9 @@
     color: $light
     cursor: pointer
 .map
-  width: 347px
+  // width: 347px
   height: 213px
   background-color: #000
   border-radius: 10px
+  iframe
+    width: 100%
