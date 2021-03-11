@@ -48,8 +48,6 @@
   }
   .swiper-slide__img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .booking {
     width: 50%;
@@ -115,11 +113,20 @@
             order: -1;
     margin: 0;
   }
-  .hotel-info-right {
+  .hotel-right {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .map {
+    width: 100%;
+    margin-left: 0;
   }
   .stars {
     -ms-flex-preferred-size: auto;

@@ -35,18 +35,13 @@
   .swiper-slide
     &__img
       width: 100%
-      object-fit: cover
   .booking
     width: 50%
     margin-right: 15px
   .map
     width: 50%
     margin-left: 15px
-
 @media (max-width: 640px)
-  .container
-    // max-width: 576px
-    // width: 92%
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -81,8 +76,15 @@
       &__offer
         order: -1
         margin: 0
-      &-right
-        flex-direction: column
+    &-right
+      flex-direction: column
+  .booking
+    width: 100%
+    margin-right: 0
+    margin-bottom: 30px
+  .map
+    width: 100%
+    margin-left: 0
   .stars
     flex-basis: auto
 @media (max-width: 576px)
