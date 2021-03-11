@@ -945,11 +945,20 @@ template {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
   }
+  .swiper-container {
+    height: 300px;
+  }
 }
 
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+}
+
+@media (max-width: 460px) {
+  .swiper-container {
+    height: 210px;
   }
 }
 /*# sourceMappingURL=style.css.map */
