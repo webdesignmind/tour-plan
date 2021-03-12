@@ -135,6 +135,24 @@
   .swiper-container {
     height: 300px;
   }
+  .newsletter {
+    padding: 76px 15px 33px 15px;
+  }
+  .newsletter-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .newsletter-title {
+    margin-bottom: 37px;
+  }
+  .newsletter__subscribe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
