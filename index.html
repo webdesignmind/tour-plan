@@ -22,7 +22,7 @@
       src="https://api-maps.yandex.ru/2.1/?apikey=aa917028-80cb-47a3-92cc-03d2fa091f6f&lang=ru_RU"
       type="text/javascript"
     ></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       // Функция ymaps.ready() будет вызвана, когда
       // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
       ymaps.ready(init);
@@ -39,7 +39,7 @@
           zoom: 19,
         });
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <header class="navbar">
@@ -243,7 +243,9 @@
               <button class="button booking__button">View Other Options</button>
             </div>
             <!-- /.booking -->
-            <div class="map" id="map"></div>
+            <div class="map">
+              <div class="map-2" id="map"></div>
+            </div>
             <!-- /.map -->
           </div>
           <!-- /.hotel-right -->
