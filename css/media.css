@@ -149,6 +149,13 @@
   }
   .newsletter-title {
     margin-bottom: 37px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    margin-top: 5px;
+    font-size: 30px;
+    line-height: 38px;
   }
   .newsletter__subscribe {
     width: 100%;
