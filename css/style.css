@@ -822,7 +822,6 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 15px 87px 15px;
-  background-image: url(..//img/newsletter-bg.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -869,6 +868,11 @@ template {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+.parallax-window {
+  min-height: 100%;
+  background: transparent;
 }
 
 .subscribe {

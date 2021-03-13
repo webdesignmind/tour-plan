@@ -34,7 +34,6 @@ function init() {
             properties: {
                 // Контент метки.
                 iconContent: 'Hilton Phuket Arcadia',
-                hintContent: 'Ну давай уже тащи'
             }
         }, {
             // Опции.
@@ -47,3 +46,4 @@ function init() {
         .add(myGeoObject)
         ;
 }
+$('.parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpeg'});
