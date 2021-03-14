@@ -1,18 +1,30 @@
-const swiper = new Swiper('.swiper-container', {
+var hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button__next',
-    prevEl: '.slider-button__prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
   effect: 'slide',
   keyboard: {
     enabled: true,
   }
 });
+var reviewsSwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.reviews-slider__button--next',
+    prevEl: '.reviews-slider__button--prev',
+  },
+});
+
 ymaps.ready(init);
 
 function init() {
