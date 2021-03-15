@@ -1,9 +1,7 @@
-// @media (min-width: 1200px)
-//   .container
-//     padding: 0
 @media (max-width: 1100px)
-  .slider
-    max-width: 650px
+  .hotel
+    &-slider
+      max-width: 650px
   .logo
     width: 132px
   .navbar
@@ -21,6 +19,9 @@
   .search
     &__input
       width: 340px
+  .card
+    width: 230px
+    height: 230px
 @media (max-width:960px)
   .hotel
     &-grid
@@ -29,18 +30,35 @@
     &-right
       flex-direction: row
       margin-top: 30px
-  .slider
-    margin: 0
-    max-width: 100%
-  .swiper-slide
-    &__img
-      width: 100%
+    &-slider
+      margin: 0
+      max-width: 100%
+      &__item
+        &__img
+          width: 100%
   .booking
     width: 50%
     margin-right: 15px
   .map
     width: 50%
     margin-left: 15px
+  .reviews
+    &-title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
+    &-slider
+      &__item
+        max-width: 580px
+  .activities
+    padding: 40px 0 60px 0
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 48%
+    height: 230px
 @media (max-width: 640px)
   .navbar
     &__search, &-menu, &__user
@@ -78,6 +96,10 @@
         margin: 0
     &-right
       flex-direction: column
+    &-slider
+      height: 300px
+      &__item
+        height: 100%
   .booking
     width: 100%
     margin-right: 0
@@ -87,8 +109,6 @@
     margin-left: 0
   .stars
     flex-basis: auto
-  .swiper-container
-    height: 300px
   .newsletter
     padding: 76px 15px 33px 15px
     &-container
@@ -104,9 +124,36 @@
         line-height: 38px
     &__subscribe
       width: 100%
+  .reviews
+    &-title
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          margin-left: -65px
+          left: 50%
+          transform: translate(-50%, 0)
+        &--next
+          margin-right: -65px
+          right: 50%
+          transform: translate(50%, 0)
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 36px
+  .card
+    width: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
 @media (max-width: 460px)
-  .swiper-container
-    height: 210px
+  .hotel
+    &-slider
+      height: 210px
