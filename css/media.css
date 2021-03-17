@@ -29,6 +29,12 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .card {
+    width: 220px;
+  }
+}
+
 @media (max-width: 960px) {
   .hotel-grid {
     -webkit-box-orient: vertical;
