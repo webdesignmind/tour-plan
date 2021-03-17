@@ -1490,7 +1490,7 @@ template {
     line-height: 38px;
   }
   .newsletter__subscribe {
-    width: 100%;
+    width: 70%;
   }
   .reviews-title {
     font-size: 18px;
@@ -1530,6 +1530,9 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
+  }
+  .newsletter__subscribe {
+    width: 100%;
   }
 }
 
