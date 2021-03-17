@@ -1130,6 +1130,177 @@ template {
   cursor: pointer;
 }
 
+.packages {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0 70px 0;
+}
+
+.packages__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.packages-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 730px;
+  height: 500px;
+}
+
+.packages-cards__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.packages-cards__card::before {
+  content: 'Flash Offer';
+  position: absolute;
+  top: 26px;
+  left: 0;
+  padding: 8px 12px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.packages-cards__image {
+  width: 100%;
+  height: 100%;
+  overflow: cover;
+}
+
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 46px 21px 30px 46px;
+  background-color: #0A223D;
+  max-width: 50%;
+}
+
+.information-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.information-hotel__name {
+  margin-bottom: 27px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.information-hotel__text {
+  margin: 0 0 34px 0;
+  font-size: 14px;
+  line-height: 160.6%;
+  color: #ffffff;
+}
+
+.information-hotel__advantage {
+  margin-bottom: 10px;
+}
+
+.information-hotel__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.information-hotel__descriptor {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.information-hotel__book {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information-hotel__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.information-hotel__old-price {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.information-hotel__pricetag {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.information-hotel__button {
+  padding: 10px 27px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40px;
+  background-color: #EC1F46;
+  border: none;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.advantages {
+  margin-bottom: 37px;
+}
+
 @media (max-width: 1100px) {
   .hotel-slider {
     max-width: 650px;

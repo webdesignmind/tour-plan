@@ -1,0 +1,99 @@
+.packages
+  display: grid
+  align-items: center
+  padding: 40px 0 70px 0
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-cards
+    display: flex
+    width: 730px
+    height: 500px
+    &__card
+      position: relative
+      display: flex
+      justify-content: space-between
+      border-radius: 8px
+      overflow: hidden
+      &::before
+        content: 'Flash Offer'
+        position: absolute
+        top: 26px
+        left: 0
+        padding: 8px 12px
+        background-color: $primary
+        color: $light
+        border-radius: 0px 4px 4px 0px
+    &__image
+      width: 100%
+      height: 100%
+      overflow: cover
+.information
+  display: flex
+  flex-direction: column
+  padding: 46px 21px 30px 46px
+  background-color: $dark
+  max-width: 50%
+  &-hotel
+    display: flex
+    flex-direction: column
+    &__name
+      margin-bottom: 27px
+      margin-top: 5px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      color: $light
+    &__text
+      margin: 0 0 34px 0
+      font-size: 14px
+      line-height: 160.6%
+      color: $light
+    &__advantage
+      margin-bottom: 10px
+    &__icon
+      width: 14px
+      height: 14px
+      margin-right: 14px
+    &__descriptor
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+    &__book
+      display: flex
+      align-items: center
+      justify-content: space-between
+    &__price
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      color: $light
+    &__old-price
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &__pricetag
+      margin-top: 5px
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+    &__button
+      padding: 10px 27px
+      align-items: center
+      min-height: 40px
+      background-color: $primary
+      border: none
+      font-family: Nunito
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      color: $light
+      cursor: pointer
+.advantages
+  margin-bottom: 37px
