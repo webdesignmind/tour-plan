@@ -29,31 +29,29 @@
   }
 }
 
+@media (max-width: 1050px) {
+  .footer__input {
+    flex-basis: 100%;
+  }
+}
+
 @media (max-width: 1000px) {
   .card {
     width: 220px;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
 @media (max-width: 960px) {
   .hotel-grid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .hotel-right {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     margin-top: 30px;
   }
   .hotel-slider {
@@ -83,8 +81,7 @@
     padding: 40px 0 60px 0;
   }
   .activities-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .activities__card {
     margin-bottom: 20px;
@@ -104,8 +101,8 @@
     grid-row: 1 / 2;
     grid-column: span 4;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -131,26 +128,19 @@
 }
 
 @media (max-width: 640px) {
-  .navbar__search, .navbar-menu, .navbar__user {
+  .navbar__search,
+  .navbar-menu,
+  .navbar__user {
     display: none;
   }
   .menu-button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0;
     width: 16px;
     height: 11px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     border: none;
     background-color: #fff;
     cursor: pointer;
@@ -161,13 +151,10 @@
     background-color: #333;
   }
   .hotel-name {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    flex-basis: 100%;
   }
   .hotel-wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .hotel-info__text {
     width: 100%;
@@ -179,16 +166,11 @@
     display: none;
   }
   .hotel-info__offer {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
     margin: 0;
   }
   .hotel-right {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .hotel-slider {
     height: 300px;
@@ -206,20 +188,14 @@
     margin-left: 0;
   }
   .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    flex-basis: auto;
   }
   .newsletter {
     padding: 76px 15px 33px 15px;
   }
   .newsletter-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    flex-direction: column;
+    align-items: start;
   }
   .newsletter-title {
     margin-bottom: 37px;
@@ -241,7 +217,8 @@
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
-  .reviews-slider__item:after, .reviews-slider__item:before {
+  .reviews-slider__item:after,
+  .reviews-slider__item:before {
     display: none;
   }
   .reviews-slider__button {
@@ -250,14 +227,12 @@
   .reviews-slider__button--prev {
     margin-left: -65px;
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     margin-right: -65px;
     right: 50%;
-    -webkit-transform: translate(50%, 0);
-            transform: translate(50%, 0);
+    transform: translate(50%, 0);
   }
   .activities__title {
     font-size: 18px;
@@ -266,6 +241,10 @@
   }
   .card {
     width: 100%;
+  }
+  .footer__contact-form {
+    grid-row: 4;
+    grid-column: span 5;
   }
 }
 
