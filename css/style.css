@@ -1363,6 +1363,29 @@ template {
   color: #E0E0E0;
 }
 
+.footer__bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  grid-column: span 4;
+}
+
+.footer__bottom--link {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.footer__bottom--image {
+  width: 136px;
+  height: 22px;
+  align-items: flex-end;
+}
+
 @media (max-width: 1100px) {
   .hotel-slider {
     max-width: 650px;
@@ -1477,11 +1500,20 @@ template {
   }
   .footer__contact-details {
     grid-row: 3/ 4;
-    grid-column: 1 / 4;
+    grid-column: span 5;
   }
   .footer__contact-form {
-    grid-row: 3 / 4;
-    grid-column: 4 / 7;
+    grid-row: 4;
+    grid-column: span 4;
+  }
+  .footer__input {
+    flex-basis: 49%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__input {
+    flex-basis: 100%;
   }
 }
 
@@ -1597,9 +1629,36 @@ template {
   .card {
     width: 100%;
   }
-  .footer__contact-form {
+  .footer-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .footer__social-network {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .footer__legal {
+    grid-row: 3;
+    grid-column: 1;
+  }
+  .footer__additional {
     grid-row: 4;
-    grid-column: span 5;
+    grid-column: 1;
+  }
+  .footer__categories {
+    grid-row: 5;
+    grid-column: 1;
+  }
+  .footer__contact-details {
+    grid-row: 6;
+    grid-column: 1;
+  }
+  .footer__contact-form {
+    grid-row: 7;
+    grid-column: 1;
   }
 }
 
