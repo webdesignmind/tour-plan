@@ -112,11 +112,15 @@
     line-height: 15px
     color: #E0E0E0
   &__bottom
+    position: relative
+    margin-top: 95px
     display: flex
     justify-content: start
     align-items: center
-    grid-row: 5 / 6
-    grid-column: span 4
+    flex-wrap: wrap
+    grid-column: 2 / 5
+    &--links
+      margin: auto
     &--link
       font-weight: normal
       font-size: 12px
@@ -125,7 +129,9 @@
       color: $light
       cursor: pointer
       margin-right: 12px
+      grid-column: 2/4
     &--image
+      position: absolute
+      right: 0
       width: 136px
       height: 22px
-      align-items: flex-end
