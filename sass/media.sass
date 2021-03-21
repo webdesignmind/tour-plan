@@ -22,6 +22,10 @@
   .card
     width: 230px
     height: 230px
+@media (max-width: 1050px)
+  .footer
+    &__input
+      flex-basis: 100%
 @media  (max-width: 1000px)
   .card
     width: 220px
@@ -62,6 +66,34 @@
   .card
     width: 48%
     height: 230px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 3
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3/ 4
+        grid-column: 1 / 4
+      &-form
+        grid-row: 3 / 4
+        grid-column: 4 / 7
+    
 @media (max-width: 640px)
   .navbar
     &__search, &-menu, &__user
@@ -153,6 +185,10 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .footer
+    &__contact-form
+      grid-row: 4
+      grid-column: span 5
 @media (max-width: 576px)
   .logo
     width: 99px
