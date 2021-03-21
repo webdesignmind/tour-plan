@@ -8,6 +8,7 @@
     padding-bottom: 40px
     &__menu-button
       display: none
+      outline: none
   &__search
     margin-right: auto
     margin-left: 108px
@@ -24,6 +25,10 @@
       font-size: 14px
       line-height: 18px
       text-transform: uppercase
+    &__item
+      &--mobile
+        &--visible
+          display: none
   &-bottom
     background-color: $dark
 .logo
@@ -44,7 +49,6 @@
     font-size: 12px
     line-height: 15px
     color: $text-color
-
   &__button
     position: absolute
     height: 100%
