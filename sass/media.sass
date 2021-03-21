@@ -79,11 +79,17 @@
       grid-column: span 2
     &__contact
       &-details
-        grid-column: span 4
-        grid-row: 3
+        grid-row: 3/ 4
+        grid-column: span 5
       &-form
-        grid-column: span 3
-        grid-row: 3
+        grid-row: 4
+        grid-column: span 4
+    &__input
+      flex-basis: 49%
+@media (max-width: 800px)
+  .footer
+    &__input
+      flex-basis: 100%
 @media (max-width: 640px)
   .navbar
     &__search, &-menu, &__user
@@ -175,6 +181,32 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
 @media (max-width: 576px)
   .logo
     width: 99px
