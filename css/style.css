@@ -913,6 +913,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1508,10 +1509,16 @@ template {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+  text-decoration: none;
 }
 
 .footer__item--mb-2 {
   margin-bottom: 25px;
+}
+
+.footer__item--mb-5 {
+  display: inline-block;
+  margin-bottom: 5px;
 }
 
 .footer__icon {
@@ -1548,8 +1555,7 @@ template {
   border-radius: 4px;
   border: none;
   padding: 18px 23px;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  width: 100%;
   margin-bottom: 22px;
   resize: none;
   outline: none;
@@ -1567,6 +1573,7 @@ template {
   outline: none;
   color: #ffffff;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .footer__info {
@@ -1774,8 +1781,7 @@ template {
 
 @media (max-width: 800px) {
   .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
   }
 }
 
@@ -2024,6 +2030,10 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .footer__bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2053,6 +2063,12 @@ template {
 @media (max-width: 460px) {
   .hotel-slider {
     height: 210px;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar__search--mobile--visible {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
