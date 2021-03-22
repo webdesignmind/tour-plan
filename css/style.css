@@ -2067,7 +2067,7 @@ template {
 }
 
 @media (max-width: 370px) {
-  .navbar__search--mobile--visible {
+  .search__input {
     width: 100%;
   }
 }
