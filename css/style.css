@@ -1678,8 +1678,10 @@ template {
   position: absolute;
   right: 18px;
   top: 17px;
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .modal__input {
