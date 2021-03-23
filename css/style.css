@@ -1640,6 +1640,15 @@ template {
   bottom: 0;
   background-color: rgba(0, 143, 223, 0.39);
   z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1654,6 +1663,15 @@ template {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1841,11 +1859,20 @@ template {
   .footer__bottom--links {
     margin: 0;
   }
+  .modal__dialog {
+    padding: 15px 30px;
+  }
 }
 
 @media (max-width: 800px) {
   .footer__input {
     width: 100%;
+  }
+  .modal__button {
+    width: 100%;
+  }
+  .modal__info {
+    margin-top: 10px;
   }
 }
 
@@ -2112,6 +2139,9 @@ template {
   }
   .footer__bottom--image {
     position: relative;
+  }
+  .modal__dialog {
+    width: 80%;
   }
 }
 
