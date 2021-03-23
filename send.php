@@ -61,6 +61,20 @@ if(mail($mail_to, $mail_subject, $mail_message, $header)) {
 }
 
 /*
+// Переменные, которые отправляет пользователь
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+
+// Формирование самого письма
+$title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message
+";
+
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -80,6 +94,7 @@ try {
 
     // Получатель письма
     $mail->addAddress('kapustinlj@yandex.ru');
+    $mail->addAddress('admin@webdesignmind.ru');
 
 // Отправка сообщения
 $mail->isHTML(true);
@@ -96,3 +111,4 @@ else {$result = "error";}
 }
 */
 // Отображение результата
+
