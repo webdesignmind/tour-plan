@@ -6,7 +6,16 @@ require 'phpmailer/Exception.php';
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
-if($_GET['action'] === 'sendEmail') {
+if($_GET['action'] === 'booking') {
+    $body = "
+        <h2>Новое обращение</h2>
+        <b>ФИО:</b> {$_POST['name']}<br>
+        <b>Телефон:</b> {$_POST['phone']}<br>
+        <b>Почта:</b> {$_POST['email']}<br>
+        <b>Текст:</b><br>
+        {$_POST['message']}
+    ";
+} else if($_GET['action'] === 'sendEmail') {
     $body = "
         <h2>Новое обращение</h2>
         <b>Почта:</b> {$_POST['email']}<br>
@@ -51,7 +60,9 @@ $header .= iconv_mime_encode("Subject", $mail_subject, $subject_preferences);
 
 // Send mail
 if(mail($mail_to, $mail_subject, $mail_message, $header)) {
-    if($_GET['action'] === 'sendEmail') {
+    if($_GET['action'] === 'booking') {
+        header('Location: thankyou.php');
+    } else if($_GET['action'] === 'sendEmail') {
         header('Location: newsletter.php');
     } else {
         header('Location: thankyou.php');
