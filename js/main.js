@@ -102,8 +102,9 @@ $(document).ready(function () {
     }
   }
 
+  $(".form__phone").mask("+7(000) 000-00-00");
+
   //Обработка форм (валидация)
-  //jqueryv
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -118,6 +119,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please enter your phone",
+          minlength: "Phone must be 11 characters",
         },
       },
     });
