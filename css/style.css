@@ -67,6 +67,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #BB1535;
+}
+
 .invalid {
   color: #EC1F46;
 }
@@ -507,6 +511,12 @@ template {
   right: 0;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
+  outline: none;
+}
+
+.search__button:hover {
+  background-color: #BB1535;
 }
 
 .user {
@@ -968,6 +978,10 @@ template {
   cursor: pointer;
 }
 
+.subscribe__button:hover {
+  background-color: #BB1535;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
@@ -1186,6 +1200,10 @@ template {
   background-color: #EC1F46;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: #BB1535;
 }
 
 .packages {
