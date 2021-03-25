@@ -469,6 +469,10 @@ template {
   text-transform: uppercase;
 }
 
+.navbar-menu__link:hover {
+  color: #EC1F46;
+}
+
 .navbar-menu__item--mobile--visible {
   display: none;
 }
