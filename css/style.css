@@ -2218,6 +2218,9 @@ template {
   .packages-cards__card:first-child {
     grid-column: span 1;
   }
+  .packages-cards__card:first-child .information {
+    padding: 30px 21px 25px 32px;
+  }
   .packages-cards__picture {
     height: 100%;
   }
