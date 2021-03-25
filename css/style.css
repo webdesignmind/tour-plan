@@ -67,6 +67,10 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1207,12 +1211,11 @@ template {
   grid-gap: 30px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
 }
 
 .packages-cards__picture {
   height: 250px;
+  width: 100%;
 }
 
 .packages-cards__card {
@@ -1236,18 +1239,26 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
+  grid-column: span 2;
 }
 
 .packages-cards__card:first-child .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 46px 21px 30px 46px;
+  max-width: 365px;
 }
 
 .packages-cards__card:first-child .information-hotel__text {
   display: block;
+  max-height: 155px;
   margin-bottom: 34px;
+  overflow-y: auto;
 }
 
 .packages-cards__card:first-child .information-hotel__stars {
@@ -1255,7 +1266,7 @@ template {
 }
 
 .packages-cards__card:first-child .packages-cards__picture {
-  width: 110%;
+  width: 100%;
   min-height: 100%;
 }
 
@@ -1573,6 +1584,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1653,16 +1668,22 @@ template {
 
 .modal__dialog {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   padding: 33px 88px;
   max-width: 478px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  min-height: 487px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
+  overflow-y: auto;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -1748,6 +1769,16 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .information-hotel__book {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .information-hotel__price {
+    width: 100%;
+  }
+  .information-hotel__button {
+    margin-top: 15px;
   }
 }
 
@@ -1864,10 +1895,15 @@ template {
   .modal__dialog {
     padding: 15px 30px;
   }
+  .packages-cards {
+    grid-row-gap: 20px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 800px) {
-  .footer__input {
+  .footer__input-group {
     width: 100%;
   }
   .modal__button {
@@ -2123,7 +2159,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2145,6 +2181,32 @@ template {
   .modal__dialog {
     width: 80%;
   }
+  .packages-cards {
+    grid-column-gap: 0;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .packages-cards__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    grid-column: span 1;
+  }
+  .packages-cards__card:first-child {
+    grid-column: span 1;
+  }
+  .packages-cards__picture {
+    height: 100%;
+  }
+}
+
+@media (max-height: 568px) {
+  .modal__dialog {
+    min-height: auto;
+    height: auto;
+    margin: 15px auto 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2153,6 +2215,46 @@ template {
   }
   .newsletter__subscribe {
     width: 100%;
+  }
+  .packages-cards__picture {
+    height: 250px;
+  }
+  .packages-cards__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-cards__card:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-cards__card:first-child .information {
+    max-width: 100%;
+  }
+  .packages-cards__card:first-child .information-hotel__text {
+    display: none;
+  }
+  .packages-cards__card:first-child .information-hotel__stars {
+    display: none;
+  }
+  .packages-cards__card:first-child .packages-cards__picture {
+    min-height: 250px;
+  }
+  .packages-cards__card:first-child::before {
+    content: 'Flash Offer';
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    padding: 4px 9px;
+    background-color: #EC1F46;
+    color: #ffffff;
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
   }
 }
 

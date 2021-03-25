@@ -301,13 +301,13 @@
                 </div>
                 <span class="information-hotel__name">Hotel Blue Haven</span>
               </div>
-              <p class="information-hotel__text">
+              <span class="information-hotel__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
-              </p>
+              </span>
               <div class="information-hotel__info">
                 <div class="advantages">
                   <div class="information-hotel__advantage">
@@ -996,18 +996,24 @@ of chamarel"
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 cols="30"
@@ -1057,18 +1063,22 @@ of chamarel"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
@@ -1085,9 +1095,11 @@ of chamarel"
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="js/jquery.validate.min.js"></script> -->
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
