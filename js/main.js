@@ -31,44 +31,6 @@ $(document).ready(function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
   });
 
-  ymaps.ready(init);
-
-  function init() {
-    var myMap = new ymaps.Map(
-        "map",
-        {
-          center: [-8.825719, 115.218629],
-          zoom: 15,
-        },
-        {
-          searchControlProvider: "yandex#search",
-        }
-      ),
-      // Создаем геообъект с типом геометрии "Точка".
-      myGeoObject = new ymaps.GeoObject(
-        {
-          // Описание геометрии.
-          geometry: {
-            type: "Point",
-            coordinates: [-8.825719, 115.218629],
-          },
-          // Свойства.
-          properties: {
-            // Контент метки.
-            iconContent: "Hilton Phuket Arcadia",
-          },
-        },
-        {
-          // Опции.
-          // Иконка метки будет растягиваться под размер ее содержимого.
-          preset: "islands#blackStretchyIcon",
-          // Метку можно перемещать.
-          draggable: true,
-        }
-      );
-    myMap.geoObjects.add(myGeoObject);
-  }
-
   // Пралакс эффект
   $(".parallax-window").parallax({ imageSrc: "../img/newsletter-bg.jpeg" });
 
@@ -120,6 +82,18 @@ $(document).ready(function () {
         phone: {
           required: "Please enter your phone",
           minlength: "Phone must be 11 characters",
+        },
+      },
+    });
+  });
+  //Обработка форм (валидация)
+  $(".newsletter__subscribe").each(function () {
+    $(this).validate({
+      errorClass: "email-error",
+      messages: {
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
         },
       },
     });

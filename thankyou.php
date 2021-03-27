@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700"
-      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
+      rel="preload"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Best Tour Plan - Hotel booking</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=aa917028-80cb-47a3-92cc-03d2fa091f6f&lang=ru_RU"></script>
   </head>
 
   <body>
     <header class="navbar navbar__mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Beat Tour Plan"
@@ -128,10 +129,14 @@
 
     <div class="container">
       <div class="hotel">
-        <h1 class="hotel-info__name hotel-name">Сообщение отправлено</h1>
+        <h1 class="hotel-info__name hotel-name">We have received your message</h1>
         <p class="hotel-description hotel-info__description">
-      Наш менеджер свяжется с вами в течении 5 минут
+      Our manager will contact you within 5 minutes
         </p>
+        <a href="index.html" style="text-decoration: none; color: #fff;">
+        <button class="button" style="margin-top: 15px;">
+         Go to main</button>
+        </a>
      </div>
     </div>
 
@@ -139,7 +144,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -207,13 +212,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://www.facebook.com/" class="footer__link"
                 ><img src="img/facebook-icon.svg" alt="iсon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link"
                 ><img src="img/youtube-icon.svg" alt="icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com/" class="footer__link"
                 ><img src="img/instagram-icon.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -297,22 +302,32 @@
 
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-              />
+            <form action="send.php" method="POST" class="form footer__form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input form__phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="17"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 cols="30"
                 rows="5"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -339,10 +354,12 @@
     </footer>
     <!-- /.footer -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 
