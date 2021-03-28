@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <header class="navbar navbar__mobile-fixed">
+    <header class="navbar navbar-mobile-fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="index.html" class="logo">
@@ -250,7 +250,7 @@
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item footer__item--mb-2">
+              <li class="footer__item footer__item--mb-1">
                 <img
                   class="footer__icon"
                   src="img/pin-icon.svg"
@@ -267,7 +267,7 @@
                   src="img/phone-icon.svg"
                   alt="icon: phone"
                 />
-                <div class="footer__item--tel">
+                <div class="footer__item-tel">
                   Tel (business hours) :
                   <a href="tel:2691500" class="footer__item footer__item--mb-5"
                     >269 1500</a
@@ -329,23 +329,28 @@
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer-bot">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
-        <div class="footer__bottom">
-          <div class="footer__bottom--links">
-            <a href="#" class="footer__bottom--link">Disclaimer</a>
-            <a href="#" class="footer__bottom--link">Conditions of use</a>
-            <a href="#" class="footer__bottom--link">Cancellation policy</a>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__links">
+            <a href="#" class="footer-bottom__link">Disclaimer</a>
+            <a href="#" class="footer-bottom__link">Conditions of use</a>
+            <a href="#" class="footer-bottom__link">Cancellation policy</a>
           </div>
           <img
             src="img/footer-bottom.jpg"
             alt="image: pay cards"
-            class="footer__bottom--image"
+            class="footer-bottom__image"
           />
         </div>
         <!-- /.footer__bottom -->
@@ -353,6 +358,56 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal__overlay" data-active-control="pop1"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog" data-active-block="pop1">
+        <button class="modal__close" data-active-control="pop1">
+          <img src="img/close.svg" alt="icon: close" />
+        </button>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form
+          action="send.php?action=booking"
+          method="POST"
+          class="form modal__form"
+        >
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input form__phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="17"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
@@ -362,4 +417,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
