@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap"
-      rel="preload"
+      rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Best Tour Plan - Hotel booking</title>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
@@ -22,10 +23,10 @@
   </head>
 
   <body>
-    <header class="navbar navbar__mobile-fixed">
+    <header class="navbar navbar-mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Beat Tour Plan"
@@ -149,11 +150,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <div class="stars">
-                <img src="img/Star.svg" alt="star" class="stars__rating" />
-                <img src="img/Star.svg" alt="star" class="stars__rating" />
-                <img src="img/Star.svg" alt="star" class="stars__rating" />
-                <img src="img/Star.svg" alt="star" class="stars__rating" />
-                <img src="img/Star.svg" alt="star" class="stars__rating" />
+                <img src="img/Star.svg" alt="star" class="starsg" />
+                <img src="img/Star.svg" alt="star" class="starsg" />
+                <img src="img/Star.svg" alt="star" class="starsg" />
+                <img src="img/Star.svg" alt="star" class="stars" />
+                <img src="img/Star.svg" alt="star" class="starsg" />
               </div>
               <h1 class="hotel-info__name hotel-name">GRAND HILTON HOTEL</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
@@ -267,8 +268,14 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <img src="img/fluid.jpg" alt="" class="map__fluid" />
-              <div class="map-2" id="map"></div>
+              <!-- <img src="img/fluid.jpg" alt="" class="map__fluid" /> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0412124696218!2d98.29255281441704!3d7.890757407948394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1616754484743!5m2!1sru!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                class="googlemap"
+              ></iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -302,63 +309,60 @@
             <div class="information">
               <div class="information-hotel">
                 <div class="information-hotel__stars">
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
                 </div>
                 <span class="information-hotel__name">Hotel Blue Haven</span>
               </div>
-              <span class="information-hotel__text">
+              <span class="information__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
               </span>
-              <div class="information-hotel__info">
+              <div class="information__info">
                 <div class="advantages">
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/map-pin.svg"
                       alt="Icon: pin"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
+                    <span class="information__descriptor"
                       >1749 Wheeler Ridge Delaware</span
                     >
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/user.svg"
                       alt="Icon: user"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
-                      >2 x Guests</span
-                    >
+                    <span class="information__descriptor">2 x Guests</span>
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/home.svg"
                       alt="Icon: home"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor">1 x Room</span>
+                    <span class="information__descriptor">1 x Room</span>
                   </div>
                 </div>
                 <!-- /.advantages -->
-                <div class="information-hotel__book">
-                  <div class="information-hotel__price">
-                    <span class="information-hotel__old-price">$ 10,500</span>
-                    <strong class="information-hotel__pricetag">$ 8,500</strong>
+                <div class="information__book">
+                  <div class="information__price">
+                    <span class="information__old-price">$ 10,500</span>
+                    <strong class="information__pricetag">$ 8,500</strong>
                   </div>
-                  <button class="button information-hotel__button">
-                    Book Now
-                  </button>
+                  <button class="button information__button" data-toggle="modal"
+                  data-active-control="pop1">Book Now</button>
                 </div>
                 <!-- /.information-hotel__book -->
               </div>
@@ -382,63 +386,60 @@
             <div class="information">
               <div class="information-hotel">
                 <div class="information-hotel__stars">
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
                 </div>
                 <span class="information-hotel__name">LUX* Belle Mare</span>
               </div>
-              <p class="information-hotel__text">
+              <p class="information__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
-              <div class="information-hotel__info">
+              <div class="information__info">
                 <div class="advantages">
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/map-pin.svg"
                       alt="Icon: pin"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
+                    <span class="information__descriptor"
                       >1749 Wheeler Ridge Delaware</span
                     >
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/user.svg"
                       alt="Icon: user"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
-                      >2 x Guests</span
-                    >
+                    <span class="information__descriptor">2 x Guests</span>
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/home.svg"
                       alt="Icon: home"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor">1 x Room</span>
+                    <span class="information__descriptor">1 x Room</span>
                   </div>
                 </div>
                 <!-- /.advantages -->
-                <div class="information-hotel__book">
-                  <div class="information-hotel__price">
-                    <span class="information-hotel__old-price">$ 8,500</span>
-                    <strong class="information-hotel__pricetag">$ 3,000</strong>
+                <div class="information__book">
+                  <div class="information__price">
+                    <span class="information__old-price">$ 8,500</span>
+                    <strong class="information__pricetag">$ 3,000</strong>
                   </div>
-                  <button class="button information-hotel__button">
-                    Book Now
-                  </button>
+                  <button class="button information__button" data-toggle="modal"
+                  data-active-control="pop1">Book Now</button>
                 </div>
                 <!-- /.information-hotel__book -->
               </div>
@@ -462,63 +463,60 @@
             <div class="information">
               <div class="information-hotel">
                 <div class="information-hotel__stars">
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
                 </div>
                 <span class="information-hotel__name">White Palace</span>
               </div>
-              <p class="information-hotel__text">
+              <p class="information__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
-              <div class="information-hotel__info">
+              <div class="information__info">
                 <div class="advantages">
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/map-pin.svg"
                       alt="Icon: pin"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
+                    <span class="information__descriptor"
                       >1749 Wheeler Ridge Delaware</span
                     >
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/user.svg"
                       alt="Icon: user"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
-                      >2 x Guests</span
-                    >
+                    <span class="information__descriptor">2 x Guests</span>
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/home.svg"
                       alt="Icon: home"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor">1 x Room</span>
+                    <span class="information__descriptor">1 x Room</span>
                   </div>
                 </div>
                 <!-- /.advantages -->
-                <div class="information-hotel__book">
-                  <div class="information-hotel__price">
-                    <span class="information-hotel__old-price">$ 10,500</span>
-                    <strong class="information-hotel__pricetag">$ 9,500</strong>
+                <div class="information__book">
+                  <div class="information__price">
+                    <span class="information__old-price">$ 10,500</span>
+                    <strong class="information__pricetag">$ 9,500</strong>
                   </div>
-                  <button class="button information-hotel__button">
-                    Book Now
-                  </button>
+                  <button class="button information__button" data-toggle="modal"
+                  data-active-control="pop1">Book Now</button>
                 </div>
                 <!-- /.information-hotel__book -->
               </div>
@@ -540,63 +538,60 @@
             <div class="information">
               <div class="information-hotel">
                 <div class="information-hotel__stars">
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
                 </div>
                 <span class="information-hotel__name">Luxury Place</span>
               </div>
-              <p class="information-hotel__text">
+              <p class="information__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
-              <div class="information-hotel__info">
+              <div class="information__info">
                 <div class="advantages">
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/map-pin.svg"
                       alt="Icon: pin"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
+                    <span class="information__descriptor"
                       >1749 Wheeler Ridge Delaware</span
                     >
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/user.svg"
                       alt="Icon: user"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
-                      >2 x Guests</span
-                    >
+                    <span class="information__descriptor">2 x Guests</span>
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/home.svg"
                       alt="Icon: home"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor">1 x Room</span>
+                    <span class="information__descriptor">1 x Room</span>
                   </div>
                 </div>
                 <!-- /.advantages -->
-                <div class="information-hotel__book">
-                  <div class="information-hotel__price">
-                    <span class="information-hotel__old-price">$ 4,500</span>
-                    <strong class="information-hotel__pricetag">$ 2,500</strong>
+                <div class="information__book">
+                  <div class="information__price">
+                    <span class="information__old-price">$ 4,500</span>
+                    <strong class="information__pricetag">$ 2,500</strong>
                   </div>
-                  <button class="button information-hotel__button">
-                    Book Now
-                  </button>
+                  <button class="button information__button" data-toggle="modal"
+                  data-active-control="pop1">Book Now</button>
                 </div>
                 <!-- /.information-hotel__book -->
               </div>
@@ -620,63 +615,60 @@
             <div class="information">
               <div class="information-hotel">
                 <div class="information-hotel__stars">
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
-                  <img src="img/Star.svg" alt="star" class="stars__rating" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
+                  <img src="img/Star.svg" alt="star" class="stars" />
                 </div>
                 <span class="information-hotel__name">Hotel Five Star</span>
               </div>
-              <p class="information-hotel__text">
+              <p class="information__text">
                 Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur
                 enim laborum magna llit. Ipsum est fugiat velit ea llamco do
                 esse ut in veniam sun in onsequat. Aute quis duis epteur
                 excepteur ipsum occaecat eiusmod nsectetur enim laborum magna
                 mollit. Ipsum est fugiat velit ea ullamco do
               </p>
-              <div class="information-hotel__info">
+              <div class="information__info">
                 <div class="advantages">
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/map-pin.svg"
                       alt="Icon: pin"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
+                    <span class="information__descriptor"
                       >1749 Wheeler Ridge Delaware</span
                     >
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/user.svg"
                       alt="Icon: user"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor"
-                      >2 x Guests</span
-                    >
+                    <span class="information__descriptor">2 x Guests</span>
                   </div>
 
-                  <div class="information-hotel__advantage">
+                  <div class="information__advantage">
                     <img
                       src="img/home.svg"
                       alt="Icon: home"
-                      class="information-hotel__icon"
+                      class="information__icon"
                     />
-                    <span class="information-hotel__descriptor">1 x Room</span>
+                    <span class="information__descriptor">1 x Room</span>
                   </div>
                 </div>
                 <!-- /.advantages -->
-                <div class="information-hotel__book">
-                  <div class="information-hotel__price">
-                    <span class="information-hotel__old-price">$ 6,500</span>
-                    <strong class="information-hotel__pricetag">$ 3,500</strong>
+                <div class="information__book">
+                  <div class="information__price">
+                    <span class="information__old-price">$ 6,500</span>
+                    <strong class="information__pricetag">$ 3,500</strong>
                   </div>
-                  <button class="button information-hotel__button">
-                    Book Now
-                  </button>
+                  <button class="button information__button" data-toggle="modal"
+                  data-active-control="pop1">Book Now</button>
                 </div>
                 <!-- /.information-hotel__book -->
               </div>
@@ -695,25 +687,24 @@
       data-image-src="img/newsletter-bg.jpeg"
     >
       <div class="newsletter-container">
-        <h2 class="newsletter-title" data-aos="fade-right">
+        <h2 class="newsletter-title">
           subscribe to our
-          <span class="newsletter-title__strong" data-aos="fade-right"
-            >Newsletter</span
-          >
+          <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
           action="send.php?action=sendEmail"
           method="POST"
-          class="subscribe newsletter__subscribe"
-          data-aos="fade-left"
+          class="form subscribe newsletter__subscribe"
+          style="overflow: visible"
         >
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -737,11 +728,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
                   </div>
                   <!-- reviews-slider__rating -->
                 </div>
@@ -772,11 +763,11 @@
                   <h3 class="reviews-slider__username">David Linch</h3>
                   <span class="reviews-slider__date">Stayed 12 Feb, 2020</span>
                   <div class="reviews-slider__rating">
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
-                    <img src="img/Star.svg" alt="star" class="stars__rating" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
+                    <img src="img/Star.svg" alt="star" class="stars" />
                   </div>
                   <!-- reviews-slider__rating -->
                 </div>
@@ -823,14 +814,15 @@ of chamarel"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal"
+            data-active-control="pop1">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="fade-up"
-            data-aos-delay="200"
+            data-aos-delay="100"
           >
             <img
               src="img/activity-2.jpg"
@@ -839,14 +831,18 @@ of chamarel"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button 
+              class="card__button" 
+              data-toggle="modal"
+              data-active-control="pop1">Book Now
+            </button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="fade-up"
-            data-aos-delay="300"
+            data-aos-delay="100"
           >
             <img
               src="img/activity-3.jpg"
@@ -855,14 +851,15 @@ of chamarel"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal"
+            data-active-control="pop1">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
           <div
             class="card activities__card"
             data-aos="fade-up"
-            data-aos-delay="400"
+            data-aos-delay="100"
           >
             <img
               src="img/activity-4.jpg"
@@ -871,7 +868,8 @@ of chamarel"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal"
+              data-active-control="pop1">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -885,7 +883,7 @@ of chamarel"
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <a href="#" class="footer__logo">
+          <a href="index.html" class="footer__logo">
             <img
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -953,13 +951,13 @@ of chamarel"
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a href="https://www.facebook.com/" class="footer__link"
                 ><img src="img/facebook-icon.svg" alt="iсon: facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.youtube.com/" class="footer__link"
                 ><img src="img/youtube-icon.svg" alt="icon: youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a href="https://www.instagram.com/" class="footer__link"
                 ><img src="img/instagram-icon.svg" alt="icon: instagram"
               /></a>
             </div>
@@ -991,7 +989,7 @@ of chamarel"
               Feel free to contact us by phone, email or by our contact form
             </p>
             <ul class="footer__ul">
-              <li class="footer__item footer__item--mb-2">
+              <li class="footer__item footer__item--mb-1">
                 <img
                   class="footer__icon"
                   src="img/pin-icon.svg"
@@ -1008,7 +1006,7 @@ of chamarel"
                   src="img/phone-icon.svg"
                   alt="icon: phone"
                 />
-                <div class="footer__item--tel">
+                <div class="footer__item-tel">
                   Tel (business hours) :
                   <a href="tel:2691500" class="footer__item footer__item--mb-5"
                     >269 1500</a
@@ -1027,7 +1025,7 @@ of chamarel"
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
-                <a href="mailto:cherly.lawson@example.com" class="footer__item">
+                <a href="mailto:cherly.lawson@example.com" class="footer__item footer__item--mb-6">
                   <img
                     class="footer__icon"
                     src="img/mail-icon.svg"
@@ -1070,23 +1068,28 @@ of chamarel"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
-              <span class="footer__info">* Required Fields</span>
+              <div class="footer-bot">
+                <button class="button footer__button" type="submit">
+                  Send
+                </button>
+                <span class="footer__info">* Required Fields</span>
+              </div>
             </form>
           </div>
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
-        <div class="footer__bottom">
-          <div class="footer__bottom--links">
-            <a href="#" class="footer__bottom--link">Disclaimer</a>
-            <a href="#" class="footer__bottom--link">Conditions of use</a>
-            <a href="#" class="footer__bottom--link">Cancellation policy</a>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom__links">
+            <a href="#" class="footer-bottom__link">Disclaimer</a>
+            <a href="#" class="footer-bottom__link">Conditions of use</a>
+            <a href="#" class="footer-bottom__link">Cancellation policy</a>
           </div>
           <img
             src="img/footer-bottom.jpg"
             alt="image: pay cards"
-            class="footer__bottom--image"
+            class="footer-bottom__image"
           />
         </div>
         <!-- /.footer__bottom -->

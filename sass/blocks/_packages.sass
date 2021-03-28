@@ -1,13 +1,14 @@
 .packages
   display: grid
   align-items: center
-  padding: 40px 0 70px 0
+  padding: 45px 0 70px 0
   &__title
-    font-weight: bold
+    font-weight: 700
     font-size: 36px
     line-height: 45px
     text-align: center
     text-transform: uppercase
+    margin: 0 0 65px 0
   &-cards
     display: grid
     grid-gap: 30px
@@ -30,11 +31,15 @@
           flex-direction: column
           padding: 46px 21px 30px 46px
           max-width: 365px
-        .information-hotel__text
+        .information__text
           display: block
           max-height: 155px
           margin-bottom: 34px
           overflow-y: auto
+          margin: 0 0 34px 0
+          font-size: 14px
+          line-height: 160.6%
+          color: $light
         .information-hotel__stars
           display: block
         .packages-cards__picture
@@ -80,66 +85,68 @@
   padding: 30px 21px 25px 32px
   background-color: $dark
   width: 100%
+  height: 100%
+  &__text
+    display: none
+    margin: 0 0 34px 0
+    font-size: 14px
+    line-height: 160.6%
+    color: $light
+  &__advantage
+    margin-bottom: 10px
+  &__book
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+  &__icon
+    width: 14px
+    height: 14px
+    margin-right: 14px
+  &__descriptor
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+  &__price
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    color: $light
+  &__old-price
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &__pricetag
+    margin-top: 5px
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+  &__button
+    padding: 10px 20px
+    align-items: center
+    max-width: 120px
+    min-height: 40px
+    background-color: $primary
+    border: none
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: $light
+    cursor: pointer
   &-hotel
     display: flex
     flex-direction: column
+    &__stars
+      display: none
     &__name
       margin-bottom: 23px
       font-weight: bold
       font-size: 18px
       line-height: 23px
       color: $light
-    &__text
-      display: none
-      margin: 0 0 34px 0
-      font-size: 14px
-      line-height: 160.6%
-      color: $light
-    &__advantage
-      margin-bottom: 10px
-    &__icon
-      width: 14px
-      height: 14px
-      margin-right: 14px
-    &__descriptor
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: $light
-    &__book
-      display: flex
-      align-items: center
-      justify-content: space-between
-    &__price
-      display: flex
-      flex-direction: column
-      flex-wrap: wrap
-      color: $light
-    &__old-price
-      font-weight: normal
-      font-size: 14px
-      line-height: 18px
-      text-decoration-line: line-through
-    &__pricetag
-      margin-top: 5px
-      font-weight: bold
-      font-size: 24px
-      line-height: 30px
-    &__button
-      padding: 10px 27px
-      align-items: center
-      min-height: 40px
-      background-color: $primary
-      border: none
-      font-family: Nunito
-      font-style: normal
-      font-weight: 600
-      font-size: 14px
-      line-height: 19px
-      color: $light
-      cursor: pointer
-    &__stars
-      display: none
 
 .advantages
-  margin-bottom: 24px
+  margin-bottom: 15px
