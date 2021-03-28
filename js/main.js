@@ -62,11 +62,17 @@ $(document).ready(function () {
           // Опции.
           // Иконка метки будет растягиваться под размер ее содержимого.
           preset: "islands#blackStretchyIcon",
-          // Метку можно перемещать.
-          draggable: true,
         }
       );
     myMap.geoObjects.add(myGeoObject);
+  }
+
+  if (document.querySelector(".map__fluid")) {
+    let mapImg = document.querySelector(".map__fluid");
+    let map = document.querySelector(".map-2");
+    mapImg.addEventListener("click", function () {
+      map.classList.add("active");
+    });
   }
 
   // Пралакс эффект
