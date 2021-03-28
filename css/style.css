@@ -1433,6 +1433,14 @@ template {
   margin-bottom: 5px;
 }
 
+.footer__item--mb-5:hover {
+  color: #EC1F46;
+}
+
+.footer__item--mb-6:hover {
+  color: #EC1F46;
+}
+
 .footer__icon {
   margin-right: 20px;
 }
@@ -1828,7 +1836,7 @@ template {
 @media (max-width: 768px) {
   .footer-wrapper {
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 40px;
+    grid-gap: 46px;
     column-gap: 0px;
   }
   .footer__input {
@@ -1836,7 +1844,7 @@ template {
   }
   .footer__logo {
     width: 104px;
-    height: 120.29px;
+    height: 115px;
     margin-top: 0;
   }
   .footer__categories {
@@ -1862,14 +1870,18 @@ template {
     grid-row: 3;
     grid-column: span 6;
     margin-left: 0;
-    margin-top: 11px;
+    margin-top: 5px;
   }
   .footer__contact-form {
     grid-row: 4;
     grid-column: span 6;
-    margin-top: -3px;
+    margin-top: 4px;
     margin-left: 0;
+    padding-right: 0;
     max-width: 540px;
+  }
+  .footer__title--mb-3 {
+    margin-bottom: 26px;
   }
 }
 
@@ -1881,8 +1893,8 @@ template {
     padding-top: 70px;
   }
   .navbar-top {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .navbar-mobile-fixed {
     position: fixed;
@@ -1919,6 +1931,8 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    height: 100%;
+    overflow-y: scroll;
   }
   .navbar-menu {
     flex-direction: column;
@@ -2077,11 +2091,16 @@ template {
   }
   .footer-wrapper {
     grid-template-columns: 1fr;
-    grid-row-gap: 34px;
+    grid-row-gap: 32px;
   }
   .footer__logo {
     grid-row: 1;
     grid-column: 1;
+    width: 94px;
+    height: 110px;
+  }
+  .footer__icon {
+    margin-right: 5px;
   }
   .footer__title--inline {
     margin: 0 0 24px 0;
@@ -2093,6 +2112,7 @@ template {
     grid-row: 2;
     grid-column: 1;
     flex-direction: column;
+    margin-left: 0;
   }
   .footer__legal {
     grid-row: 3;
@@ -2102,6 +2122,7 @@ template {
   .footer__additional {
     grid-row: 4;
     grid-column: 1;
+    margin-left: 0;
   }
   .footer__categories {
     grid-row: 5;
@@ -2115,7 +2136,7 @@ template {
   .footer__contact-form {
     grid-row: 7;
     grid-column: 1;
-    padding-top: 10px;
+    padding-top: 16px;
     padding-right: 0px;
   }
   .footer-bot {
